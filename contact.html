@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="icon" href="./assets/icons/gaming.ico">
+     <!--animacion-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+     <!--FontAwesome-->
+     <script src="https://kit.fontawesome.com/fb0c0b832f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <!-- <h1 class="animate__animated animate__slideInRight">Gaming Realm</h1> -->
+    <h1>Gaming Realm</h1>
+        <!--Paginas de nuestro sitio web-->
+        <nav class="navbar">
+            <ul class="navbar">
+              <li class="navbar"><a href="./index.html">Home</a></li>
+              <li class="navbar"><a href="./popular_games.html">Popular Games</a></li>
+              <li class="navbar"><a href="./articles.html">Articles</a></li>
+              <li class="navbar"><a href="#">Contact</a></li>
+              <li class="navbar"><a href="./about_us.html">About Us</a></li>
+            </ul>
+          </nav>
+    </header>
+
+    <main>
+        <!--Formulario-->
+        <!--cambiar get por post cuando el formulario funcione-->
+        <section class="contact-form">
+            <form action="URL" method="post">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <!--Nombre-->
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" maxlength="30" required="">
+                    <!--Apellido-->
+                    <label for="lastname">Apellido</label>
+                    <input type="text" id="lastname" name="lastname" maxlength="30" required="">
+                    <!--Email-->
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" maxlength="100" required="">
+                    <!--Area de Texto-->
+                    <label for="comentario">Comentario</label>
+                    <textarea name="comentario" id="comentario" cols="100" rows="15" placeholder="Escribe tu consulta"></textarea>
+                </fieldset>
+                <!--Boton Enviar-->
+                <input type="submit" value="Enviar">
+            </form>
+            
+        </section>
+    </main>
+
+    <footer>
+        <h3>Social Media</h3>
+        <!--Redes Sociales-->
+        <nav class="social-networks">
+          <ul class="social-networks">
+            <li class="social-networks"><a href="https://www.tiktok.com/es/" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+            <li class="social-networks"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="social-networks"><a href="https://twitter.com/home?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            <li class="social-networks"><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+          </ul>
+        </nav>
+        <!--copyright-->
+        <section id="copyright">
+            <p>&copy; Copyright 2023 Codo a Codo - Comision 23038</p>
+        </section>
+    </footer>
+
+</body>
+</html>

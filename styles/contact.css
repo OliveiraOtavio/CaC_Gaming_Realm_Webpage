@@ -1,0 +1,79 @@
+/* Estilos del formulario */
+.contact-form {
+    background-color: rgb(41, 24, 50);
+    border: 2px solid white;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;    
+    margin: auto;
+  }
+
+  form,
+  fieldset,
+  label,
+  legend {
+    background-color: rgb(41, 24, 50);
+    border-radius: 1em;
+    width: 95%;
+  }
+
+input, 
+textarea {
+    background-color: rgb(255, 255, 255);
+}
+
+  fieldset {    
+    border: none;
+    margin: 1rem ;
+    padding: 0;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;    
+    font-size: 1.2rem;
+    color: #ffffff;
+    max-width: 80%;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid #ffffff;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #495057;
+    width: 100%;
+    max-width: 80%;
+  }
+  
+  textarea {
+    resize: none;
+    height: 8rem;
+  }
+  
+  input[type="submit"] {
+    background-color: #366fa8;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #343a40;
+  }
+  

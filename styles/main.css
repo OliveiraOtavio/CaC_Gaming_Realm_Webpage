@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alkatra', cursive;
+   /* border: 1px red solid;   */
+    background-color: rgb(18, 9, 18);
+    color: white;
+    
+  }
+
+  h1 {
+    background-color: inherit;
+    padding: 0.5em;
+  }
+
+  a {
+    background-color: inherit;
+  }
+
+  body {
+    height: 100vh;    
+  }
+
+  header {
+    /*background-color: rgb(30, 30, 52);*/
+    border: 2px solid white;
+    background: url(.././assets/images/4ea84f04d08d72d2cd574d14f5dad176.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 98%;    
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 5vh;
+  }
+
+ /* Estilos del main */
+ main {
+  background-color: rgb(56, 41, 56);
+  background: url(.././assets/images/pexels-lucie-liz-3165335.jpg);
+  background-size: cover;
+  border: 3px solid white;
+  height: 100vh;
+  margin-top: 5vh;
+  max-width: 98%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main h1 {
+  background-color: rgba(0, 0, 0, 0.80);
+  width: 60%;
+  text-align: center;
+}
+
+  footer {   
+    padding: 1em;   
+  }
+
+  footer h3 {
+    /*color: white;*/
+    text-align: center;
+    font-size: 2em;
+    padding: 0.2em;
+  }
+
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.4);
+    max-width: 100%;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    padding: 0.1em;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 3em;
+  }
+  
+  .navbar li {
+    list-style: none;   
+  }
+  
+  .navbar a {
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: none;        
+    border-radius: 0.3em;
+    /*transition: background-color 0.3s ease-in-out;*/
+  }
+  
+  .navbar a:hover {
+    color: rgb(192, 0, 192);
+  }
+
+
+  /*------------------------------- X Section -----------------------------------*/
+
+  .social-networks {
+    background-color: rgb(30, 30, 52);
+    display: flex;    
+    justify-content: center;
+    gap: 4em;
+    padding: 0.3em;
+  }
+
+  .fa-brands {
+    background-color: rgb(30, 30, 52);
+    color: rgb(0, 243, 142);
+    font-size: 3em;
+  }
+
+  #copyright {
+    text-align: center;
+  }
