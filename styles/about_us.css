@@ -1,0 +1,175 @@
+/* * {
+    border: 1px solid green;
+} */
+
+
+main {
+    height: 100%;
+    margin-bottom: 0;
+    
+  }
+/*------------------------------- Description Section -----------------------------------*/
+  .developers-info {  
+    min-width: 80%;
+    max-width: 98%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 0.5em;
+    padding: 0.7em;
+    font-family: "emotion";
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+  }  
+/*------------------------------- X Section -----------------------------------*/
+.container{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0em; /* ajusta la distancia entre las tarjetas */
+    margin: 0 -13px; /* margen negativo para compensar el padding del body */
+    margin-bottom: 5em;
+}
+
+.container .card{
+    width: 22%; /* ancho de la tarjeta con margen incluido */
+    margin-left: 2%;    
+    display: flex;
+    flex-direction: column;
+}
+
+.container .card .face.face1{
+    height: 35em;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    filter: grayscale(100%);
+    background: #333;
+    justify-content: center;
+    align-content:center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(2em);
+    margin-bottom: -2.5em;    
+    
+}
+
+.container .card .face.face2{
+    flex: 1;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;    
+    padding-top: 1em;
+    box-sizing: border-box;
+    box-shadow: 0 1em 2.5em rgba(0,0,0,.8);
+    transition: 0.7s;
+    transform: translateY(-12em);
+}
+
+.container .card:hover .face.face1{
+    transform: translateY(0);
+    filter: grayscale(0%);
+    box-shadow:
+    inset 0 0 1.5em whitesmoke,
+    inset 0.3em 0 1em #f0f,
+    inset -0.3em 0 1em #0ff,
+    inset 0.3em 0 4.5em #f0f,
+    inset -0.3em 0 4.5em #0ff,
+    0 0 0.75em #fff,
+    -0.15em 0 1.2em #f0f,
+    0.15em 0 1.2em #0ff;
+    
+}
+
+.container .card .face.face1 .content{
+    opacity: .2;
+    transition:  0.5s;
+    text-align: center;  
+} 
+
+.container .card:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.container .card .face.face1 .content i{
+    font-size: 3em;
+    color: white;
+    display: inline-block;  
+}
+
+.container .card .face.face1 .content h3{ /* NOMBRES DEL EQUIPO*/
+    font-family: emotion;
+    font-size: 1.75em;
+    color: white;
+    text-align: center;  
+    cursor: default;
+}
+
+.container .card .face.face1 .content a{
+    transition: .5s;
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0); 
+}
+
+.container .card .face.face2 .content p, a{
+    font-family: emotion;    
+    margin: 0 ;    
+    color:black;
+}
+
+.container .card .face.face2 .content a{
+    
+    text-decoration:none;
+    color: black;
+    box-sizing: border-box;
+    outline : 0.1em dashed #333;
+    padding: 1em;
+    margin: 1.5em 0 0;
+    display: inline-block;
+}
+
+.container .card .face.face2 .content p, /* CONTENEDOR DE TEXTOS DE LAS TARJETAS*/
+.container .card .face.face2 .content a {
+/*background-color: rgb(122, 121, 121);*/
+font-size: 1em;
+margin: 0;
+padding: 0;
+cursor: default;
+}
+
+.container .card .face.face2 .content a {
+
+text-decoration: none;
+color: black;
+box-sizing: border-box;
+outline: 0.1em dashed #333;
+padding: 1em;
+margin-top: 1.5em;
+display: inline-block;
+
+}
+
+.container .card .face.face2 .content a:hover {
+background: #333;
+color: whitesmoke;
+box-shadow: inset 0px 0px 0.5em rgba(0, 0, 0, 0.5);
+
+}
+
+.container .card .face.face1 .content img {
+width: 100%; /* ajusta la anchura de la imagen /
+object-fit: cover; / ajusta la imagen para cubrir todo el espacio disponible */
+}
+
+.data-label {
+    color: rgb(59, 13, 56);    
+    
+}
