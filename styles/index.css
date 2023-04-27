@@ -1,0 +1,75 @@
+
+  /* ------------------ BIENVENIDOS POP-UP --------------------*/
+
+  .bienvenidos-contenedor {
+    background-color: rgba(5, 3, 28, 0.8);    
+    position: fixed;
+    top: 0;
+    left: 2.5%;
+    width: 95%;
+    height: 100%;
+    z-index: 999;
+  }
+
+  .bienvenidos-card {
+    /*width: 100%;
+    text-align: center;*/
+    background: url(".././assets/images/logo.png");
+    background-size: 15%; 
+    background-position: top;    
+    background-repeat: no-repeat;
+    background-color: rgba(2, 1, 1, 0.95);      
+    position: fixed;
+    top: 7.5%;
+    left: 15%;
+    width: 70%;
+    height: 85%;
+    /*background-color: rgba(5, 4, 26, 0.9);    */
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+  }
+
+  .bienvenidos-card h2{
+    background-color: rgba(2, 1, 1, 0.75);
+    font-family: snes;
+    color: white;
+    margin-bottom: 10%;
+    font-size: 5em;
+  }
+
+  .bienvenidos-card p {
+    /* background-color: rgba(0, 0, 255, 0.571); */
+    font-family: emotion;
+    color: white;
+    font-size: 1.3em;  
+    margin-bottom: 10%;  
+  }
+
+/* ------------------ BOTON CERRAR --------------------*/
+
+  .cerrar-btn {    
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: snes;
+    font-size: 2em;    
+    width: 50%;
+    background-color: rgb(55, 20, 74);
+    color: white;
+    padding: 0.2em;
+    border-radius: 0.5em;
+    transition: box-shadow 0.5s ease-out;
+    box-shadow: 0 0 0 rgba(0, 255, 255, 0.5), 0 0 0 rgba(0, 255, 255, 0.5), 0 0 0 rgba(0, 255, 255, 0.5), 0 0 0 rgba(0, 255, 255, 0.5);
+  }
+
+  .cerrar-btn:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 1), 0 0 20px rgba(0, 255, 255, 1), 0 0 20px rgba(0, 255, 255, 1), 0 0 20px rgba(0, 255, 255, 1);
+    cursor: pointer;
+  }
