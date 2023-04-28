@@ -9,3 +9,15 @@ cerrarBtn.addEventListener('click', () => {
   article.style.display = 'none';
   section.style.display = 'none';
 });
+
+// Navegación automatica del Carrousel
+// La función selecciona botones de radio en el index uno tras otro, con un
+// retraso de 5s (5000ms) entre cada selección, y se reinicia al llegar al terminar
+var counter = 2;
+setInterval(function() {
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 4){
+        counter = 1;
+    }
+}, 5000);

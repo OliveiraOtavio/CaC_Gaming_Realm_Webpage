@@ -73,3 +73,115 @@
     box-shadow: 0 0 20px rgba(0, 255, 255, 1), 0 0 20px rgba(0, 255, 255, 1), 0 0 20px rgba(0, 255, 255, 1), 0 0 20px rgba(0, 255, 255, 1);
     cursor: pointer;
   }
+
+  /*------------CARROUSEL------------*/
+
+  .carrousel {
+    margin-left: 25vw;
+  }
+
+  .carrousel {
+    width: 640px;
+    height: 360px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .imagenes {
+    width: 500%;
+    height: 360px;
+    display: flex;
+  }
+
+  .imagenes input{
+    display: none; /*oculta la barra automática*/
+  }
+
+  .imagen {
+    width: 20%;
+    transition: 2s;
+  }
+
+  .imagen img {
+    width: 640px;
+    height: 360px;
+  }
+
+  /*Navegación manual*/
+
+  .navegacion-manual {
+    position: absolute;
+    width: 640px;
+    margin-top: -15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .manual-btn {
+    border: 1px solid turquoise;
+    padding: 3px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .manual-btn:not(:last-child){
+    margin-right: 30px;
+  }
+
+  .manual-btn:hover{
+    background: turquoise;
+  }
+
+  #radio1:checked ~ .primer {
+    margin-left: 0;
+  }
+
+  #radio2:checked ~ .primer {
+    margin-left: -20%;
+  }
+
+  #radio3:checked ~ .primer {
+    margin-left: -40%;
+  }
+
+  #radio4:checked ~ .primer {
+    margin-left: -60%;
+  }
+
+  /*Navegación automática*/
+
+  .navegacion-automatica {
+    position: absolute;
+    display: flex;
+    width: 640px;
+    justify-content: center;
+    margin-top: 345px;
+  }
+
+  .navegacion-automatica section {
+    border: 1px solid turquoise;
+    padding: 3px;
+    border-radius: 8px;
+    transition: 1s;
+  }
+
+  .navegacion-automatica section:not(:last-child){
+    margin-right: 30px;
+  }
+
+  #radio1:checked ~ .navegacion-automatica .auto-btn1 {
+    background: turquoise;
+  }
+
+  #radio2:checked ~ .navegacion-automatica .auto-btn2 {
+    background: turquoise;
+  }
+
+  #radio3:checked ~ .navegacion-automatica .auto-btn3 {
+    background: turquoise;
+  }
+
+  #radio4:checked ~ .navegacion-automatica .auto-btn4 {
+    background: turquoise;
+  }
