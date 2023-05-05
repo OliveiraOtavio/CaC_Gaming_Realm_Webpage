@@ -1,0 +1,114 @@
+*{
+    
+/*border: 2px solid green;*/
+    border: none;
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+         
+main { 
+    background-color: rgb(2, 4, 24);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 0em;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+      
+       
+}
+   
+   
+   /* -- NOTICIA 1 --*/
+   
+#comic {
+     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+h2 {
+ 
+    justify-content: center;
+    align-items: center;
+    font-family: 'emotion';
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    padding: .5rem;
+    text-shadow: 4px 0px 10px deeppink;
+
+}
+
+p {
+
+    justify-content: center;
+    align-items: center;
+    font-family: 'emotion';
+    text-align: justify;
+    color: white;
+    padding: .5rem;
+    margin: 1rem;
+
+}
+
+a {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: bold;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-align: center;
+    color:mediumturquoise;
+    size-adjust: 5rem;
+    padding: 1rem;
+    padding-left: 30rem ;
+
+}
+
+/* -- Estilos para imagenes --  */
+
+img {
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 1rem;
+    margin-left: 15rem;
+
+
+}
+
+/* -- BOTON -- */
+
+.boton {
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    size-adjust: 5rem;
+    border: 5px solid transparent;
+    border-style: ridge;
+    border-radius: 16px;
+    border-color: gold ;
+    box-shadow: yellow;
+    margin-left: 35rem;
+    padding: 1rem;
+    margin-top: 3rem;
+
+}
+
+
+
+

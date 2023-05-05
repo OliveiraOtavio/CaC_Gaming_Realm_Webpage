@@ -1,0 +1,259 @@
+*{
+ /*border: 2px solid green;*/
+    border: none;
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+      
+main { 
+    background-color: rgb(2, 4, 24);
+    background-image: url(.././assets/images/fondo-html.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 0em;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    padding-top: 1em;
+    
+}
+
+
+/* -- NOTICIA 1 --*/
+
+.magecontainer {
+  
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7); /* se le da opacidad al fondo para que resalte mejor el texto */
+    align-items: center;
+    justify-content: center;
+
+
+}
+.magecontainer h2 {
+  
+  font-family: 'emotion';
+  font-weight: bold;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 4px 0px 10px aqua;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+ 
+}
+
+.magecontainer p {
+  
+  font-family: 'emotion', Georgia;
+  text-align: justify;
+  color: white;
+  padding: .5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+}
+
+.magecontainer img {
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 30rem;
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 2rem;
+
+}
+
+.magecontainer a {
+
+  size: 30px;
+  font-family: 'emotion', sans-serif;
+  font-weight: bold;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: lightskyblue;
+  padding: 2rem 40rem 2rem;
+  text-decoration: underline;
+  padding: 1rem;
+  margin-left: -50rem;
+   
+} 
+
+/** Boton del más info con bordes que tienen gradiente de colores **/
+
+.fcc-btn {
+  
+  size-adjust: 2rem;
+  font-family: 'emotion', sans-serif;
+  font-weight: bold;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: black;
+  border: 5px solid transparent;
+  border-radius: 16px;
+  border-image: linear-gradient(to right, cyan, deeppink) 1;
+  
+}
+
+.fcc-btn::after {
+ 
+  content: '';
+  z-index: -1;
+  border-radius: 16px;
+  top: -10px; bottom: -10px;
+  left: -10px; right: -10px;
+  border-image: linear-gradient(to right, cyan, deeppink) 1;
+  background: linear-gradient(cyan, deeppink)
+} 
+
+
+.magecontainer h3 {
+
+  font-family: 'emotion';
+  font-weight: bold;
+  font-size: large;
+  color: wheat;
+  text-align: center;
+  text-decoration: underline;
+  padding: 1rem;
+
+}
+
+/* Estilo de videos */
+
+.magecontainer iframe {
+
+  justify-content: center;
+  align-content: center;
+  margin-left: 30vw;
+  border-style: ridge ;
+  border-color: wheat;
+  box-shadow: 3px 3px 5px white ;  
+  margin-top: 1rem;
+  
+}
+
+/* Estilo de la lista para la noticia sobre Mageseeker*/
+
+.detallesmage {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  
+}
+
+.detallesmage li {
+  display: flex;
+  flex-direction: row;
+  font-family: 'emotion';
+  font-style: italic;
+  color: white;
+  text-decoration: underline;
+  padding: 0rem 3rem 0rem;
+}
+
+.detallesmage p {
+  display: flex;
+  flex-direction: row;
+  font-family: 'emotion';
+  text-align: justify;
+  color: white;
+  padding: 0.5rem 1rem 0.5rem;
+}
+
+
+ /*------------------------------- Social Media Section -----------------------------------*/
+
+ footer {
+    max-width: 100%;       
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/* Estilos para el título */
+footer h3 {
+  background-color: rgba(0, 0, 0);
+ 
+  color: white;
+  text-align: center;
+  font-family: emotion;
+  font-size: 2em;  
+  padding-top: 0.5em;
+}
+
+/* Estilos para la lista de redes sociales */
+.social-networks {
+  background-color: rgba(0, 0, 0);
+  /* background: url(.././assets/images/fondo\ form.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 3em;
+}
+
+.social-networks li { /* SEPARACION ENTRE ICONOS*/
+  margin: 0 1em;
+  width: 6em;
+  list-style: none;
+}
+
+.fa-brands {  /* MANEJO DE LOS ICONOS */
+  background-color: #3c3c3c;
+  display: flex;
+  justify-content: center;
+  width: 1.3em;
+  height: 1.3em;  
+  color: white;
+  font-size: 3em;
+  border-radius: 100%;
+  opacity: 0.5;
+  transition: 0.5s;
+  margin: 0;
+  padding-top: 0.15em;  
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.fa-brands:hover {
+  color: white;
+  opacity: 1;
+}
+
+/* Estilos para el contenedor de redes sociales */
+.social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 90vw;   
+}
+
+.social-networks {
+  text-align: center;
+  transition: .5s;
+  align-items: center; /* Centra verticalmente los íconos */
+}
+
+.social-networks:hover {    
+  text-shadow: 0 0 15px aqua, 0 0 50px aqua;
+}
+
+
+/* Estilos para el texto de derechos de autor */
+#copyright {
+  font-family: emotion;
+  text-align: center;
+  margin-top: 2vw;
+  color: white;
+}
