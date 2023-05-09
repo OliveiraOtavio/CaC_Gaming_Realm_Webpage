@@ -1,39 +1,8 @@
-*{
-  /*border: 2px solid green;*/
-     border: none;
-     box-sizing: border-box; 
-     margin: 0;
-     padding: 0;
- }
-       
- main { 
-    
-     background-color: rgba(0, 0, 0, 0.7);
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: flex-end;
-     margin-top: 0em;
-     margin-bottom: 2em;
-     padding-bottom: 2em;
-     padding-top: 1em;
-     
- }
-
-/* ----------------------------------------------------------------*/
-
-#juegos { /* contenedor padre */
-
-    display: flex; /* crea contenedor */
-    flex-flow: column nowrap; /* atajo para que este en formato vertical y que no se desborde el contenido */
-    row-gap: 1rem ; /* espacio entre columnas */
-    justify-content: center;
-    align-items: center;
-        
+      
+ main {   
+    background-color: rgba(0, 0, 0, 0.7);  
 }
-
-h2 {
-
+h2{
     font-family: 'emotion';
     font-weight: bold;
     font-size: 3rem;
@@ -47,8 +16,7 @@ h2 {
  
 }
 
- p {
-
+p{
     justify-content: center;
     align-items: center;
     font-family: 'emotion';
@@ -56,11 +24,17 @@ h2 {
     color: white;
     text-align: center;
     padding: .5rem;
-  
-    
-
 }
-    
+
+/* ----------------------------------------------------------------*/
+#juegos { /* contenedor padre */
+
+    display: flex; /* crea contenedor */
+    flex-flow: column nowrap; /* atajo para que este en formato vertical y que no se desborde el contenido */
+    row-gap: 1rem ; /* espacio entre columnas */
+    justify-content: center;
+    align-items: center;       
+}
 .lanzamientosmesames { /* contenedor hijo */
 
     display: flex;
@@ -68,8 +42,6 @@ h2 {
     list-style: none; /* Le quita los puntos al listado */
     
 }
-    
-
 .lanzamientosmesames li {
 
     display: flex;
@@ -85,11 +57,7 @@ h2 {
     text-align: justify;
     padding: .5rem;
     margin-top: 1rem;
-    
-    
-
 }
-
 .lanzamientosmesames p {
     display: flex;
     flex-flow: column nowrap;
@@ -100,6 +68,4 @@ h2 {
     align-content: center;
     text-align: justify;
     padding: .5rem;
-
-
 }

@@ -1,190 +1,102 @@
-* {
-/*border: 2px solid green;*/
-border: none;
-box-sizing: border-box; 
-margin: 0;
-padding: 0;
+/* contenedor padre */
+h2{
+  font-family: 'emotion';
+  font-weight: bold;
+  font-size: 35px;
+  text-shadow: 2px 2px 5px aqua;
+  color: white;
+  text-align: center; 
+  margin-bottom: -1.7rem;
+  padding: 0 0 0 15rem; 
 }
-  
-main { 
-background-color: rgb(2, 4, 24);
-background-image: url(.././assets/images/fondo-html.jpg);
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: flex-end;
-margin-top: 0em;
-margin-bottom: 2em;
-padding-bottom: 2em;
-padding-top: 1em;
+#noticias { 
+  display: flex; 
+  flex-flow: column nowrap; /* atajo para que este en formato vertical y que no se desborde el contenido */
+  row-gap: 1rem ; /* espacio entre filas */
 }
 
-/* Sección de noticias -- General */
-
-/* --NOTICIA 1-- */
-
-#noticias { /* contenedor padre */
-
-display: flex; /* crea contenedor */
-flex-flow: column nowrap; /* atajo para que este en formato vertical y que no se desborde el contenido */
-row-gap: 1rem ; /* espacio entre filas */
-list-style: none; /* Le quita los puntos al listado */
-  
+.mageseeker { 
+  background-color: rgba(0, 0, 0, 0.3); /* se le da opacidad al fondo para que resalte mejor el texto */
+  min-height: 10rem;
 }
-
-.mageseeker { /* contenedor hijo */
-
-background-color: rgba(0, 0, 0, 0.3); /* se le da opacidad al fondo para que resalte mejor el texto */
-min-height: 10rem;
-
-}
-
-.mageseeker h2 {
-
-font-family: 'emotion';
-font-weight: bold;
-text-shadow: 2px 2px 5px aqua;
-color: white;
-justify-content: center;
-align-content: center;
-text-align: center; 
-position: center;
-margin-bottom: -1.7rem;
-padding: 0 0 0 15rem; 
+.mageseeker a {
+  font-family: 'emotion';
+  color: aquamarine;
+  align-content: right;
+  text-align: right;
+  text-shadow: aqua; 
+  margin-bottom: 1rem;
 }
 
 .mageseeker img { 
-
-float: left;
-padding: .5rem;
-width: 350px;
-height: 196px;
-align-items: center;
-
+  float: left;
+  padding: .5rem;
+  width: 350px;
+  height: 196px;
+  align-items: center;
 }
 
 .mageseeker p {
-
-font-family: 'emotion';
-color: white;
-align-items: center;
-align-content: center;
-text-align: justify;
-margin-top: 4rem;
-
-
-}
-
-.mageseeker a {
-
-font-family: 'emotion';
-color: aquamarine;
-align-content: right;
-text-align: right;
-text-shadow: aqua; 
-margin-bottom: 1rem;
-
+  font-family: 'emotion';
+  color: white;
+  align-items: center;
+  align-content: center;
+  text-align: justify;
+  margin-top: 4rem;
 }
 
 /* -- NOTICIA 2 -- */
-
 .juegos {
-
   background-color: rgba(0, 0, 0, 0.3); /* se le da opacidad al fondo para que resalte mejor el texto */
   min-height: 10rem;
-
 }
-
-.juegos h2 {
-
-font-family: 'emotion';
-font-weight: bold;
-text-shadow: 2px 2px 5px aqua;
-color: white;
-align-content: center;
-text-align: center; 
-position: right;
-padding: 0 0 0 15rem; /* para centrar el titulo en base al parrafo */
+.juegos a {  
+  font-family: 'emotion';
+  color: aquamarine;
+  align-content: right;
+  text-align: right;
+  text-shadow: aqua;
+  margin-bottom: 1rem;  /* para centrar en base a la imagen y texto */ 
 }
-  
-.juegos img { 
-  
-float: left;
-padding: 1rem;
-width: 350px;
-height: 196px;
-  
-}
-  
+.juegos img {   
+  float: left;
+  padding: 1rem;
+  width: 350px;
+  height: 196px;
+} 
 .juegos p {
-  
-font-family: 'emotion';
-color: white;
-justify-content: center;
-align-content: right;
-text-align: justify;
-margin-top: 4rem; /* para centrar en base a la imagen */
-   
+  font-family: 'emotion';
+  color: white;
+  justify-content: center;
+  align-content: right;
+  text-align: justify;
+  margin-top: 4rem; /* para centrar en base a la imagen */   
 }
-  
-.juegos a {
-  
-font-family: 'emotion';
-color: aquamarine;
-align-content: right;
-text-align: right;
-text-shadow: aqua;
-margin-bottom: 1rem;  /* para centrar en base a la imagen y texto */
-  
-}
-
 /* -- NOTICIA 3 -- */
-
 .comiccon {
-
   background-color: rgba(0, 0, 0, 0.3); /* se le da opacidad al fondo para que resalte mejor el texto */
   min-height: 10rem;
-
 }
-
-.comiccon h2 {
-
-font-family: 'emotion';
-font-weight: bold;
-text-shadow: 2px 2px 5px aqua;
-color: white;
-align-content: center;
-text-align: center; 
-position: right;
-padding: 0 0 0 15rem; /* para centrar el titulo en base al parrafo */
-}
-  
-.comiccon img { 
-  
-float: left;
-padding: 1rem;
-width: 350px;
-height: 196px;
-  
-}
-  
-.comiccon p {
-  
-font-family: 'emotion';
-color: white;
-justify-content: center;
-align-content: right;
-text-align: justify;
-margin-top: 4rem; /* para centrar en base a la imagen */
-   
-}
-  
 .comiccon a {
-  
-font-family: 'emotion';
-color: aquamarine;
-align-content: right;
-text-align: right;
-text-shadow: aqua;
-margin-bottom: 1rem;  /* para centrar en base a la imagen y texto */
+  font-family: 'emotion';
+  color: aquamarine;
+  align-content: right;
+  text-align: right;
+  text-shadow: aqua;
+  margin-bottom: 1rem;  /* para centrar en base a la imagen y texto */
 }
+.comiccon img { 
+  float: left;
+  padding: 1rem;
+  width: 350px;
+  height: 196px; 
+}
+.comiccon p {
+  font-family: 'emotion';
+  color: white;
+  justify-content: center;
+  align-content: right;
+  text-align: justify;
+  margin-top: 4rem; /* para centrar en base a la imagen */ 
+}
+

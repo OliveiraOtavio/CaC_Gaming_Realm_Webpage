@@ -1,187 +1,176 @@
 
   /* ------------------ BIENVENIDOS POP-UP --------------------*/
 
-  .bienvenidos-contenedor {
-    background-color: rgba(5, 3, 28, 0.8);    
-    position: fixed;
-    top: 0;
-    left: 2.5%;
-    width: 95%;
-    height: 100%;
-    z-index: 999;
-  }
+.bienvenidos-contenedor {
+  background-color: rgba(5, 3, 28, 0.8);    
+  position: fixed;
+  top: 0;
+  left: 2.5%;
+  width: 95%;
+  height: 100%;
+  z-index: 999;
+}
+.bienvenidos-card {
+  background: url(".././assets/images/logo.png");
+  background-size: 15%; 
+  background-position: top;    
+  background-repeat: no-repeat;
+  background-color: rgba(2, 1, 1, 0.95);      
+  position: fixed;
+  top: 7.5%;
+  left: 15%;
+  width: 70%;
+  height: 85%;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+}
+.bienvenidos-card h2{
+  background-color: rgba(2, 1, 1, 0.75);
+  font-family: snes;
+  color: white;
+  margin-bottom: 10%;
+  font-size: 5em;
+}
 
-  .bienvenidos-card {
-    /*width: 100%;
-    text-align: center;*/
-    background: url(".././assets/images/logo.png");
-    background-size: 15%; 
-    background-position: top;    
-    background-repeat: no-repeat;
-    background-color: rgba(2, 1, 1, 0.95);      
-    position: fixed;
-    top: 7.5%;
-    left: 15%;
-    width: 70%;
-    height: 85%;
-    /*background-color: rgba(5, 4, 26, 0.9);    */
-    z-index: 999;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3em;
-  }
-
-  .bienvenidos-card h2{
-    background-color: rgba(2, 1, 1, 0.75);
-    font-family: snes;
-    color: white;
-    margin-bottom: 10%;
-    font-size: 5em;
-  }
-
-  .bienvenidos-card p {
-    /* background-color: rgba(0, 0, 255, 0.571); */
-    font-family: emotion;
-    color: white;
-    font-size: 1.3em;  
-    margin-bottom: 10%;  
-  }
+.bienvenidos-card p {
+  font-family: emotion;
+  color: white;
+  font-size: 1.3em;  
+  margin-bottom: 10%;  
+}  
 
 /* ------------------ BOTON CERRAR --------------------*/
+.cerrar-btn {    
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: snes;
+  font-size: 2em;    
+  width: 50%;
+  background-color: rgb(55, 20, 74);
+  color: white;
+  padding: 0.2em;
+  border-radius: 0.5em;
+  transition: box-shadow 0.5s ease-out;
+  box-shadow: 0 0 0 rgba(0, 255, 255, 0.5), 0 0 0 rgba(0, 255, 255, 0.5), 0 0 0 rgba(0, 255, 255, 0.5), 0 0 0 rgba(0, 255, 255, 0.5);
+}
 
-  .cerrar-btn {    
-    border: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: snes;
-    font-size: 2em;    
-    width: 50%;
-    background-color: rgb(55, 20, 74);
-    color: white;
-    padding: 0.2em;
-    border-radius: 0.5em;
-    transition: box-shadow 0.5s ease-out;
-    box-shadow: 0 0 0 rgba(0, 255, 255, 0.5), 0 0 0 rgba(0, 255, 255, 0.5), 0 0 0 rgba(0, 255, 255, 0.5), 0 0 0 rgba(0, 255, 255, 0.5);
-  }
+.cerrar-btn:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 255, 1), 0 0 20px rgba(0, 255, 255, 1), 0 0 20px rgba(0, 255, 255, 1), 0 0 20px rgba(0, 255, 255, 1);
+  cursor: pointer;
+}
 
-  .cerrar-btn:hover {
-    box-shadow: 0 0 20px rgba(0, 255, 255, 1), 0 0 20px rgba(0, 255, 255, 1), 0 0 20px rgba(0, 255, 255, 1), 0 0 20px rgba(0, 255, 255, 1);
-    cursor: pointer;
-  }
+/*------------CARROUSEL------------*/
+.carrousel {
+  margin-left: 25vw;
+}
+.carrousel {
+  width: 640px;
+  height: 360px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.imagenes {
+  width: 500%;
+  height: 360px;
+  display: flex;
+}
 
-  /*------------CARROUSEL------------*/
+.imagenes input{
+  display: none; /*oculta la barra automática*/
+}
 
-  .carrousel {
-    margin-left: 25vw;
-  }
+.imagen {
+  width: 20%;
+  transition: 2s;
+}
 
-  .carrousel {
-    width: 640px;
-    height: 360px;
-    border-radius: 10px;
-    overflow: hidden;
-  }
+.imagen img {
+  width: 640px;
+  height: 360px;
+}
 
-  .imagenes {
-    width: 500%;
-    height: 360px;
-    display: flex;
-  }
+/*Navegación manual*/
 
-  .imagenes input{
-    display: none; /*oculta la barra automática*/
-  }
+.navegacion-manual {
+  position: absolute;
+  width: 640px;
+  margin-top: -15px;
+  display: flex;
+  justify-content: center;
+}
 
-  .imagen {
-    width: 20%;
-    transition: 2s;
-  }
+.manual-btn {
+  border: 1px solid turquoise;
+  padding: 3px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 1s;
+}
 
-  .imagen img {
-    width: 640px;
-    height: 360px;
-  }
+.manual-btn:not(:last-child){
+  margin-right: 30px;
+}
 
-  /*Navegación manual*/
+.manual-btn:hover{
+  background: turquoise;
+}
 
-  .navegacion-manual {
-    position: absolute;
-    width: 640px;
-    margin-top: -15px;
-    display: flex;
-    justify-content: center;
-  }
+#radio1:checked ~ .primer {
+  margin-left: 0;
+}
 
-  .manual-btn {
-    border: 1px solid turquoise;
-    padding: 3px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 1s;
-  }
+#radio2:checked ~ .primer {
+  margin-left: -20%;
+}
 
-  .manual-btn:not(:last-child){
-    margin-right: 30px;
-  }
+#radio3:checked ~ .primer {
+  margin-left: -40%;
+}
 
-  .manual-btn:hover{
-    background: turquoise;
-  }
+#radio4:checked ~ .primer {
+  margin-left: -60%;
+}
 
-  #radio1:checked ~ .primer {
-    margin-left: 0;
-  }
+/*Navegación automática*/
+.navegacion-automatica {
+  position: absolute;
+  display: flex;
+  width: 640px;
+  justify-content: center;
+  margin-top: 345px;
+}
 
-  #radio2:checked ~ .primer {
-    margin-left: -20%;
-  }
+.navegacion-automatica section {
+  border: 1px solid turquoise;
+  padding: 3px;
+  border-radius: 8px;
+  transition: 1s;
+}
 
-  #radio3:checked ~ .primer {
-    margin-left: -40%;
-  }
+.navegacion-automatica section:not(:last-child){
+  margin-right: 30px;
+}
 
-  #radio4:checked ~ .primer {
-    margin-left: -60%;
-  }
+#radio1:checked ~ .navegacion-automatica .auto-btn1 {
+  background: turquoise;
+}
 
-  /*Navegación automática*/
+#radio2:checked ~ .navegacion-automatica .auto-btn2 {
+  background: turquoise;
+}
 
-  .navegacion-automatica {
-    position: absolute;
-    display: flex;
-    width: 640px;
-    justify-content: center;
-    margin-top: 345px;
-  }
+#radio3:checked ~ .navegacion-automatica .auto-btn3 {
+  background: turquoise;
+}
 
-  .navegacion-automatica section {
-    border: 1px solid turquoise;
-    padding: 3px;
-    border-radius: 8px;
-    transition: 1s;
-  }
-
-  .navegacion-automatica section:not(:last-child){
-    margin-right: 30px;
-  }
-
-  #radio1:checked ~ .navegacion-automatica .auto-btn1 {
-    background: turquoise;
-  }
-
-  #radio2:checked ~ .navegacion-automatica .auto-btn2 {
-    background: turquoise;
-  }
-
-  #radio3:checked ~ .navegacion-automatica .auto-btn3 {
-    background: turquoise;
-  }
-
-  #radio4:checked ~ .navegacion-automatica .auto-btn4 {
-    background: turquoise;
-  }
+#radio4:checked ~ .navegacion-automatica .auto-btn4 {
+  background: turquoise;
+}
