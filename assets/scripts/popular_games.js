@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   async function fetchData() {
     const queryParams = new URLSearchParams({
       key: "1bf19b1764914c0b876d0bdde313a694",
-      dates: "2023-04-01,2023-04-20",
+      dates: "2022-04-01,2023-04-20",
       platforms: "18,1,7",
       page_size: "9",
       ordering: "-added",
