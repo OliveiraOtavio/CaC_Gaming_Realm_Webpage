@@ -2,101 +2,67 @@
 h2{
   font-family: 'emotion';
   font-weight: bold;
-  font-size: 35px;
-  text-shadow: 2px 2px 5px aqua;
+  font-size: 2.3em;
+  text-shadow: 2px 2px 30px aqua;
   color: white;
   text-align: center; 
   margin-bottom: -1.7rem;
-  padding: 0 0 0 15rem; 
+  margin-top: 0.5em;
+ 
 }
+
 #noticias { 
   display: flex; 
   flex-flow: column nowrap; /* atajo para que este en formato vertical y que no se desborde el contenido */
   row-gap: 1rem ; /* espacio entre filas */
 }
 
-.mageseeker { 
-  background-color: rgba(0, 0, 0, 0.3); /* se le da opacidad al fondo para que resalte mejor el texto */
-  min-height: 10rem;
+#noticias li{
+  background-color: rgba(0, 0, 0, 0.8);
+  min-height: 10em;
+  padding-bottom: 0.5em;
 }
-.mageseeker a {
+
+#noticias a { /* utilizar esto para manejar los links */  
+  width: 7em;
   font-family: 'emotion';
-  color: aquamarine;
-  align-content: right;
-  text-align: right;
-  text-shadow: aqua; 
-  margin-bottom: 1rem;
-}
-
-.mageseeker img { 
-  float: left;
-  padding: .5rem;
-  width: 350px;
-  height: 196px;
+  font-size: 1.5em;
+  color: aquamarine;  
+  text-shadow: aqua;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto; 
+  padding: 0.5em;
+  margin-bottom: 0;
 }
 
-.mageseeker p {
+#noticias p { /* maneja los estilos del texto de las noticias*/
+  /* background-color: white; */
   font-family: 'emotion';
   color: white;
-  align-items: center;
+  display: flex;
+  align-items: flex-end;
   align-content: center;
   text-align: justify;
-  margin-top: 4rem;
+  margin-top: 3em;
+  padding: 1em;
+  font-size: 1.5em;
 }
 
-/* -- NOTICIA 2 -- */
-.juegos {
-  background-color: rgba(0, 0, 0, 0.3); /* se le da opacidad al fondo para que resalte mejor el texto */
-  min-height: 10rem;
-}
-.juegos a {  
-  font-family: 'emotion';
-  color: aquamarine;
-  align-content: right;
-  text-align: right;
-  text-shadow: aqua;
-  margin-bottom: 1rem;  /* para centrar en base a la imagen y texto */ 
-}
-.juegos img {   
+#noticias img { /* maneja los estilo de los imagenes de las noticias*/
+  /* border: 2px solid green; */
+  display: flex;
+  margin-top: auto;
   float: left;
+  margin-top: 3em;  
+  margin-bottom: 3em; 
   padding: 1rem;
-  width: 350px;
-  height: 196px;
-} 
-.juegos p {
-  font-family: 'emotion';
-  color: white;
-  justify-content: center;
-  align-content: right;
-  text-align: justify;
-  margin-top: 4rem; /* para centrar en base a la imagen */   
+  padding-bottom: 1em;
+  padding-right: 0;
+  width: 25em;
+  height: 15em;
+  align-items: center;
+  
 }
-/* -- NOTICIA 3 -- */
-.comiccon {
-  background-color: rgba(0, 0, 0, 0.3); /* se le da opacidad al fondo para que resalte mejor el texto */
-  min-height: 10rem;
-}
-.comiccon a {
-  font-family: 'emotion';
-  color: aquamarine;
-  align-content: right;
-  text-align: right;
-  text-shadow: aqua;
-  margin-bottom: 1rem;  /* para centrar en base a la imagen y texto */
-}
-.comiccon img { 
-  float: left;
-  padding: 1rem;
-  width: 350px;
-  height: 196px; 
-}
-.comiccon p {
-  font-family: 'emotion';
-  color: white;
-  justify-content: center;
-  align-content: right;
-  text-align: justify;
-  margin-top: 4rem; /* para centrar en base a la imagen */ 
-}
-

@@ -1,14 +1,35 @@
+document.addEventListener('DOMContentLoaded', function() {
+  // Seleccionar los elementos que se necesitan
+  const article = document.querySelector('.bienvenidos-card');
+  const section = document.querySelector('.bienvenidos-contenedor');
+  const cerrarBtn = document.querySelector('.cerrar-btn');
 
-const article = document.querySelector('.bienvenidos-card');
-const section = document.querySelector('.bienvenidos-contenedor');
-const cerrarBtn = document.querySelector('.cerrar-btn');
+  // Verificar si el pop-up ya se mostró antes
+  const urlParams = new URLSearchParams(window.location.search);
+  const popupShown = urlParams.get('popupShown');
 
-// Manejar el evento de clic en el botón "Cerrar"
-cerrarBtn.addEventListener('click', () => {
-  // Ocultar el "pop-up" y el section
-  article.style.display = 'none';
-  section.style.display = 'none';
+  if (!popupShown) {
+    // Si el pop-up no se mostró antes, mostrarlo y agregar el parámetro en la URL
+    article.style.display = 'block';
+    section.style.display = 'block';
+
+    cerrarBtn.addEventListener('click', (event) => {
+      // Evitar que se envíe el formulario
+      event.preventDefault();
+
+      // Ocultar el pop-up y agregar el parámetro en la URL
+      article.style.display = 'none';
+      section.style.display = 'none';
+      window.history.replaceState(null, null, window.location.pathname + '?popupShown=true');
+    });
+  } else {
+    // Si el pop-up ya se mostró antes, ocultarlo
+    article.style.display = 'none';
+    section.style.display = 'none';
+  }
 });
+
+
 
 // Navegación automatica del Carrousel
 // La función selecciona botones de radio en el index uno tras otro, con un

@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; 
+  /* border: 1px solid green; */
 }
 
 /*Estilos de Tipografia*/
@@ -306,3 +307,46 @@ p{
   text-shadow: 0 0 5px aqua;
 }
 
+/*------------------------------ MEDIA QUERIES ---------------------------------------*/  
+
+@media screen and (max-width: 768px) {
+
+  main {
+    padding: 0;
+  }
+
+  header h1 {
+    /* color: green; */
+    display: flex;
+    align-items: center;
+    height: 1.5em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;    
+    font-size: 5em;
+    text-align: center;     
+  }
+
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    max-width: 100%;
+    display: flex;  
+    flex-direction: column;  
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.1em;
+  }
+  
+  .navbar a {
+    font-family: snes;
+    font-size: 0.5em;
+    flex-direction: column;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: none;        
+    border-radius: 0.3em;
+    padding: 0.5em 1em;
+  }
+
+  
+}
