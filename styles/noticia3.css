@@ -22,21 +22,27 @@
 }
 
 .comic a {
+    width: 40%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.5rem;
     text-decoration: underline;
     text-align: center;
     color:mediumturquoise;
     padding: 1rem;
-    padding-left: 30rem ;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .comic img {
+    display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     padding: 1rem;
-    margin-left: 15rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #comic {   
@@ -49,14 +55,22 @@
 /* -- BOTON -- */
 
 .boton {
-    border: 5px solid transparent;
+    background-color: rgba(0, 0, 0, 0.3);    
+    font-weight: bolder;
+    max-width: 30%;
+    border: 3px solid rgb(255, 0, 195);
     border-style: ridge;
-    border-radius: 16px;
-    border-color: gold ;
-    box-shadow: yellow;
+    border-radius: 16px;    
+    box-shadow: 0px 0px 30px rgb(119, 10, 68);
     margin-left: 10rem;
-    padding: 1rem;
-    margin-top: 3rem;
+    padding: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+#incentive {   
+    font-size: 2em;
+    text-align: center;
+    margin-top: 0.5em;
 }
 
 

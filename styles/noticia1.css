@@ -6,40 +6,50 @@
   align-items: center;
   justify-content: center;
 }
-.magecontainer a {
-  size: 30px;
+
+.magecontainer a { /* BOTON MAS INFORMACION*/
+  /* background-color: red; */
   font-family: 'emotion', sans-serif;
+  width: 10em;
+  font-size: 30px;
   font-weight: bold;
+  display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
   color: lightskyblue;
-  padding: 2rem 40rem 2rem;
+  /* padding: 2rem 40rem 2rem; */
   text-decoration: underline;
-  padding: 0.5rem;
-  margin-left: -50rem;
+  padding: 0.8rem;
+  margin-left: auto;
+  margin-right: auto;   
 } 
+
 .magecontainer img {
+  background-color: green;
+  display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem 30rem;
-  max-width: 100%;
-  max-height: 100%;
+  /* padding: 1rem 30rem; */
+  max-width: 97%;
+  max-height: 100%; 
   margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
-.magecontainer h2 { 
+
+.magecontainer h2 {  /* TITULO PRINCIPAL DE LA NOTICIA */
   font-family: 'emotion';
   font-weight: bold;
   font-size: 3rem;
   color: white;
   text-align: center;
   text-decoration: underline;
-  text-shadow: 4px 0px 10px aqua;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  text-shadow: 4px 0px 10px aqua;  
+  margin-bottom: 3rem;
 }
 
-.magecontainer h3 {
+.magecontainer h3 { /* CARACTERISTICAS DEL JUEGO */
   font-family: 'emotion';
   font-weight: bold;
   font-size: 30px;
@@ -47,12 +57,14 @@
   text-align: center;
   text-decoration: underline;
   padding: 1rem;
+  margin-top: 1EM;
 }
 
-.magecontainer p {
+.magecontainer p { /* TEXTO PRINCIPAL DE LA NOTICIA */
+  background-color: rgba(0, 0, 0, 0.728);
   font-family: 'emotion', Georgia;
   text-align: justify;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: .5rem;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -60,31 +72,35 @@
 
 /* Estilo de videos */
 .magecontainer iframe {
+  display: flex;
   justify-content: center;
   align-content: center;
-  margin-left: 30vw;
+  margin-left: auto;
+  margin-right: auto;
   border-style: ridge ;
   border-color: wheat;
   box-shadow: 3px 3px 5px white ;  
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 /* Estilo de la lista para la noticia sobre Mageseeker*/
 .detallesmage {
   display: flex;
   flex-direction: column;
-  list-style-type: none;
+  list-style-type: none;    
 }
 
-.detallesmage li {
+.detallesmage li { /* TITULOS DE LA LISTA */  
   display: flex;
   flex-direction: row;
   font-family: 'emotion';
   font-style: italic;
   font-size: 30px;
   color: white;
-  text-decoration: underline;
-  padding: 0rem 3rem 0rem;
+  text-decoration: underline;  
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  margin-left: 1em;
 }
 
 .detallesmage p {
