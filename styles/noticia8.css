@@ -1,0 +1,67 @@
+.bahia {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bahia h2 {
+    justify-content: center;
+    align-items: center;
+    font-family: 'emotion';
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    padding: .5rem;
+    text-shadow: 4px 0px 10px rgb(20, 220, 255);
+}
+
+.bahia p {
+    justify-content: center;
+    align-items: center;
+    font-family: 'emotion';
+    text-align: justify;
+    color: white;
+    padding: .5rem;
+    margin: 1rem;
+}
+
+.bahia a {
+    width: 10%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-align: center;
+    color:mediumturquoise;
+    padding: 1rem;
+    background-color: black;
+    border: 3px solid rgb(15, 224, 213);
+    border-style: ridge;
+    border-radius: 16px;    
+    box-shadow: 0px 0px 30px rgb(14, 239, 255);
+}
+
+.bahia img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+#fuente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    font-style: italic;
+    color: white;
+}
