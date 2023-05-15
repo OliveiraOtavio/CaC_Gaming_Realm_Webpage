@@ -12,10 +12,6 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/contact.css">
-    <!-- Scripts -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/fb0c0b832f.js" crossorigin="anonymous"></script>
-    <script src="./assets/scripts/contact.js"></script>
 </head>
 
 <body>
@@ -23,6 +19,11 @@
     <header>
         <h1>Gaming Realm</h1>
         <nav class="navbar">
+            <button class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
             <ul>
                 <li>
                     <a class="hipervinculos" href="./index.html?popupShown=true">
@@ -31,7 +32,7 @@
                         <span class="span3"></span>
                         <span class="span4"></span>
                         Home
-                      </a>
+                    </a>
                 </li>
                 <li>
                     <a class="hipervinculos" href="./popular_games.html">
@@ -75,7 +76,7 @@
 
     <!-- Contenido Principal -->
     <h1>Contact Us</h1>
-    <main>        
+    <main>
         <div class="container contact-form">
             <div class="contact-image">
                 <img src="./assets/images/logo.png" alt="logo_gaming_realm">
@@ -85,29 +86,31 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" required
+                            <input type="text" name="txtName" class="form-control" placeholder="Nombre *" required
                                 value="">
                         </div>
                         <div class="form-group">
-                            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" required
+                            <input type="text" name="txtEmail" class="form-control" placeholder="Email *" required
                                 value="">
                         </div>
                         <div class="form-group">
-                            <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *"
+                            <input type="text" name="txtPhone" class="form-control" placeholder="Telefono *"
                                 required value="">
                         </div>
                         <div class="form-group">
                             <select name="gamer-type" class="form-control" id="gamer-type" required autocomplete="off">
-                                <option value="" disabled selected>¿Qué tipo de gamer sos?</option>
-                                <option value="online">Online</option>
-                                <option value="offline">Offline</option>
-                                <option value="both">Ambos!</option>
+                                <option value="" disabled selected>¿Cual es la plataforma de tu consulta?</option>
+                                <option value="pc">PC</option>
+                                <option value="xbox">Xbox</option>
+                                <option value="playstation">Playstation</option>
+                                <option value="switch">Nintento Switch</option>
+                                <option value="otra">Otra Plataforma</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <textarea name="txtMsg" class="form-control" id="message-board" placeholder="Your Message *"
+                            <textarea name="txtMsg" class="form-control" id="message-board" placeholder="Escribi tu consulta *"
                                 required style="width: 100%; height: 150px;"></textarea>
                         </div>
                         <div class="form-group">
@@ -117,29 +120,34 @@
                     </div>
                 </div>
             </form>
-        </div>    
+        </div>
     </main>
 
     <footer>
         <h3>Social Media</h3>
         <!--Redes Sociales-->
-        <nav >
-          <ul class="social-container" >
-            <li><a class="social-networks" href="https://www.tiktok.com/es/" target="_blank"><i
-              class="fa-brands fa-tiktok"></i></a></li>
-            <li><a class="social-networks" href="https://www.instagram.com/" target="_blank"><i
-              class="fa-brands fa-instagram"></i></a></li>
-            <li><a class="social-networks" href="https://twitter.com/home?lang=es" target="_blank"><i
-              class="fa-brands fa-twitter"></i></a></li>
-            <li><a class="social-networks" href="https://www.youtube.com/" target="_blank"><i
-              class="fa-brands fa-youtube"></i></a></li>
-          </ul>
+        <nav>
+            <ul class="social-container">
+                <li><a class="social-networks" href="https://www.tiktok.com/es/" target="_blank"><i
+                            class="fa-brands fa-tiktok"></i></a></li>
+                <li><a class="social-networks" href="https://www.instagram.com/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+                <li><a class="social-networks" href="https://twitter.com/home?lang=es" target="_blank"><i
+                            class="fa-brands fa-twitter"></i></a></li>
+                <li><a class="social-networks" href="https://www.youtube.com/" target="_blank"><i
+                            class="fa-brands fa-youtube"></i></a></li>
+            </ul>
         </nav>
         <!--copyright-->
         <section id="copyright">
-          <p>&copy; Copyright 2023 Codo a Codo - Comision 23038</p>
+            <p>&copy; Copyright 2023 Codo a Codo - Comision 23038</p>
         </section>
     </footer>
+    <!-- Scripts -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/fb0c0b832f.js" crossorigin="anonymous"></script>
+    <script src="./assets/scripts/contact.js"></script>
+    <script src="./assets/scripts/main.js"></script>
 </body>
 
 </html>

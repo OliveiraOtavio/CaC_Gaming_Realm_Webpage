@@ -119,7 +119,13 @@ p{
 
 
 
+
 /*------------------------------- Navbar Section -----------------------------------*/
+
+.menu-toggle {
+  display: none;  
+}
+
 .navbar {
   background-color: rgba(0, 0, 0, 0.8);
   max-width: 100%;
@@ -268,13 +274,14 @@ p{
 
 /*copy*/
 #copyright {
+  font-family: emotion;  
   background-color: rgba(0, 0, 0);
-  padding: 1rem;
-  font-size: 20px;
+  padding: 1rem;  
   text-align: center;
 }
 #copyright p {
   color : white;
+  font-size: 1.5em;
 }
 
 /* Efectos visuales*/
@@ -283,6 +290,7 @@ p{
   opacity: 1;
   transition: 0.5s;
 }  
+
 .social-networks:before {
   content: '';
   position: absolute;
@@ -296,11 +304,13 @@ p{
   transform: scale(.9);
   z-index: -1;
 }
+
 .social-networks:hover:before {
   transform: scale(1.2);
   box-shadow: 0 0 15px rgb(113, 5, 156);
   filter: blur(3px);
 }
+
 .social-networks:hover {
   color: white;
   box-shadow: 0 0 25px aqua;
@@ -339,7 +349,7 @@ p{
   
   .navbar a {
     font-family: snes;
-    font-size: 0.5em;
+    font-size: 2em;
     flex-direction: column;
     color: white;
     background-color: rgba(255, 255, 255, 0);
@@ -348,5 +358,50 @@ p{
     padding: 0.5em 1em;
   }
 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinea el botón a la derecha */
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #7d1c66; /* Cambia el color de fondo a blanco */
+    margin-left: 85%;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+  }
+  
+  .bar {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #000; /* Cambia el color de las barras a negro */
+    margin: 4px 0;
+  }
+ 
+  
   
 }
+
+/* PRUEBA MENU HAMBURGUESA */
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none; /* Oculta la lista de elementos del menú */
+  }
+
+
+}
+
+.navbar ul.active {
+  display: block; /* Muestra la lista de elementos del menú */
+}
+

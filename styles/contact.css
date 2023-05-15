@@ -139,14 +139,14 @@ main h1 {
   border: none;
   border-radius: 1rem;
   padding: 1.5%;
-  background-color: rgba(27, 7, 27);
+  background-color: rgb(84, 0, 82);
   color: #fff;
   cursor: pointer;
   transition: background-color 0.5s ease-in-out;
 }
 
 .contact-form .btnContact:hover {
-  background-color: rgba(27, 7, 27);
+  background-color: rgb(84, 0, 82);
   animation: neon-pulse 1.5s ease-in-out ;
   text-shadow: 0 0 10px rgba(0, 255, 255, 0.2),
                  0 0 20px rgba(0, 255, 255, 0.2),
