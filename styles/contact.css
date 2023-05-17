@@ -34,19 +34,22 @@ main h1 {
   background-size: cover;
   margin-top: 1em;
   border-radius: 1em;
-  width: 70%;
+  width: 80%;
   height: 90%;
-  box-shadow: 0 0 5px #9b59b6, 0 0 10px #9b59b6, 0 0 15px #9b59b6, 0 0 20px #9b59b6, 0 0 30px #9b59b6, 0 0 40px #9b59b6, 0 0 50px #9b59b6;
+  /* box-shadow: 0 0 5px #9b59b6, 0 0 10px #9b59b6, 0 0 15px #9b59b6, 0 0 20px #9b59b6, 0 0 30px #9b59b6, 0 0 40px #9b59b6, 0 0 50px #9b59b6; */
+  box-shadow: 2px 2px 5px rgb(113, 5, 156), -2px -2px 5px rgb(3, 171, 197);
 }
 
 .contact-form .form-control{
-  border-radius:1rem;  
+  border-radius:1rem;    
 }
 
 .form-group input {
   padding: 0.5em; 
   transition: box-shadow 0.5s ease; /* añadimos transición */
   box-shadow: none; /* quitamos la sombra por defecto */
+  width: 100%;
+  margin-left: 0;
 }
 
 .form-group input:focus {
@@ -68,6 +71,7 @@ main h1 {
 #message-board {
   transition: box-shadow 0.5s ease;
   box-shadow: none;
+  
 }
 
 #message-board:focus {
@@ -121,7 +125,7 @@ main h1 {
 .contact-form form .row{
   margin-bottom: -7%;
 }
-.contact-form h3{
+.contact-form h3 {
   font-family: "emotion";
   margin-bottom: 8%;
   margin-top: -10%;
@@ -166,4 +170,46 @@ main h1 {
   background-color: #0062cc;
   border: none;
   cursor: pointer;
+}
+
+.top-button {  
+  margin-top: 3em;     
+}
+
+.top-button:hover {  
+  text-decoration: none;     
+}
+
+/*------------------------------ MEDIA QUERIES ---------------------------------------*/
+
+@media screen and (max-width: 767px) {
+
+  .contact-form {
+    border-radius: 0;
+    box-shadow: 2px 2px 3px rgb(113, 5, 156), -2px -2px 3px rgb(3, 171, 197);
+    width: 99%;
+    
+  }
+
+  .top-button:hover {  
+    text-decoration: none;     
+  }
+
+  .contact-form h3 {    
+    font-size: 3em;
+  }
+
+   /* .form-group input {   
+    background-color: red;
+  } 
+
+  #gamer-type{
+    background-color: blue;
+  }
+
+  #message-board {
+    background-color: yellow;
+  } */
+
+
 }

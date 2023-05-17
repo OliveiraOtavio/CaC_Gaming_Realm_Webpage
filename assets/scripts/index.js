@@ -1,3 +1,6 @@
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
   // Seleccionar los elementos que se necesitan
   const article = document.querySelector('.bienvenidos-card');
@@ -42,3 +45,14 @@ setInterval(function() {
         counter = 1;
     }
 }, 5000);
+
+/* Manejo de los Iframes*/ 
+var script = document.createElement('script');
+script.src = 'https://unpkg.com/aos@2.3.1/dist/aos.js';
+script.onload = function() {
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+};
+document.head.appendChild(script);

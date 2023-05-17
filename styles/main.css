@@ -21,7 +21,7 @@
 html {
   height: 100vh;
   max-width: 100vw;
-  background-color: rgb(68, 8, 56); 
+  background-color: rgb(32, 5, 82); 
   background-image: url('.././assets/images/fondo-html.jpg');
   background-size: cover;  
   background-repeat: repeat; 
@@ -49,7 +49,7 @@ header {
 /*Caracteristicas del main*/
 main {
   background-color: rgba(2, 4, 24,0.9);
-  padding: 3rem;
+  padding: 3rem;  
 }
 
 /*Caracteristicas para todos el contenido de footer*/
@@ -73,10 +73,13 @@ h1 {
   width: 98%;
   margin-left: auto;
   margin-right: auto;
+  text-shadow: 2px 2px 2px rgb(113, 5, 156), -2px -2px 1px rgb(3, 171, 197);  
+  letter-spacing: 0.05em;
 }
 
 /*Caracteristicas unicamente para el h1 del main*/
 header h1 {
+  letter-spacing: normal;
   font-family: "snes", sans-serif;
   color: white;
   display: flex;
@@ -96,6 +99,7 @@ footer h3 {
   font-family: emotion;
   font-size: 2em;  
   padding-top: 1em;
+  text-shadow: 2px 2px 1px  rgb(113, 5, 156);
 }
 /*Caracteristicas para todos los ul*/
 ul {
@@ -133,6 +137,15 @@ p{
   align-items: center;
   justify-content: space-evenly;
   padding: 1em;
+  position: sticky;
+  top:0;
+}
+.sect {
+	width: 100%;
+  
+}
+.sect img{
+width: 100%;
 }
 
 .navbar a {
@@ -145,7 +158,7 @@ p{
   padding: 0.5em 1em;
 }
 
-/* CARACTERISTICAS DE LOS HUPERVINCULOS*/
+/* CARACTERISTICAS DE LOS HIPERVINCULOS*/
 .hipervinculos {
   font-size: 0.7em;
   background-color: rgba(0, 0, 0, 0.4);
@@ -227,6 +240,7 @@ p{
   transition-delay: 0.25s;
 }  
 
+
 /*------------------------------- Social Media Section -----------------------------------*/
 
 /*contenedor de iconos*/
@@ -278,11 +292,10 @@ p{
   background-color: rgba(0, 0, 0);
   padding: 1rem;  
   text-align: center;
-}
-#copyright p {
   color : white;
   font-size: 1.5em;
 }
+
 
 /* Efectos visuales*/
 .fa-brands:hover{
@@ -317,43 +330,68 @@ p{
   text-shadow: 0 0 5px aqua;
 }
 
-/*------------------------------ MEDIA QUERIES ---------------------------------------*/  
+.top-button {
+  background-color: rgb(84, 0, 82);
+  width: 7em;
+  padding: 0.3em;
+  margin-top: 1em;    
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.5em;  
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  color: white;
+  font-size: 2em;
+  font-family: snes;
+  text-decoration: none;
+  letter-spacing: 0.04em;  
+}
 
-@media screen and (max-width: 768px) {
+.top-button:hover {
+  color: white;
+  transition: 1s;
+  box-shadow: 0 0 40px aqua;  
+}
+
+/*------------------------------ MEDIA QUERIES ---------------------------------------*/
+
+@media screen and (max-width: 767px) {
 
   main {
     padding: 0;
+    padding-bottom: 1em;
   }
-
+  
   header h1 {
     /* color: green; */
     display: flex;
     align-items: center;
     height: 1.5em;
     margin-top: 0.3em;
-    margin-bottom: 0.3em;    
+    margin-bottom: 0.3em;
     font-size: 5em;
-    text-align: center;     
+    text-align: center;
   }
 
   .navbar {
     background-color: rgba(0, 0, 0, 0.8);
     max-width: 100%;
-    display: flex;  
-    flex-direction: column;  
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     padding: 0.1em;
   }
-  
+
   .navbar a {
     font-family: snes;
     font-size: 2em;
     flex-direction: column;
     color: white;
     background-color: rgba(255, 255, 255, 0);
-    text-decoration: none;        
+    text-decoration: none;
     border-radius: 0.3em;
     padding: 0.5em 1em;
   }
@@ -362,8 +400,10 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
+    padding: 1em;
   }
-  
+
   .menu-toggle {
     display: flex;
     flex-direction: column;
@@ -371,13 +411,14 @@ p{
     align-items: center;
     width: 40px;
     height: 40px;
-    background-color: #7d1c66; /* Cambia el color de fondo a blanco */
+    background-color: rgb(84, 0, 82);
+    box-shadow: 1px -1px 2px rgb(252, 1, 227);
     margin-left: 85%;
     border: none;
     border-radius: 10%;
     cursor: pointer;
   }
-  
+
   .bar {
     display: block;
     width: 24px;
@@ -385,23 +426,13 @@ p{
     background-color: #000; /* Cambia el color de las barras a negro */
     margin: 4px 0;
   }
- 
-  
-  
-}
 
-/* PRUEBA MENU HAMBURGUESA */
-
-/* Estilos para dispositivos móviles */
-@media (max-width: 768px) {
+  /* MENU HAMBURGUESA */
   .navbar ul {
     display: none; /* Oculta la lista de elementos del menú */
   }
 
-
+  .navbar ul.active {
+    display: block; /* Muestra la lista de elementos del menú */
+  }
 }
-
-.navbar ul.active {
-  display: block; /* Muestra la lista de elementos del menú */
-}
-

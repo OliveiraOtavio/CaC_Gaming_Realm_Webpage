@@ -39,7 +39,7 @@
 }
 
 .card {
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   filter: grayscale(100%);
   background-color: rgb(93, 93, 93);
   display: flex;
@@ -148,7 +148,7 @@
 
 /*------------------------------ MEDIA QUERIES ---------------------------------------*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   
   .card-container {
     flex-direction: column;
@@ -164,9 +164,23 @@
     filter: none;
     background-color: white;
   }
+  
+  .popular-games-info {
+    text-align: start;
+    font-size: 1.3em;
+  }
+  
+  #loading {    
+    width: 90%;
+  }
+  
 }
 
-.popular-games-info {
-  text-align: start;
-  font-size: 1.3em;
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .card {
+      width: 45%;     
+      
+    }
 }
+

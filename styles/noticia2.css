@@ -17,7 +17,7 @@ h2{
  
 }
 
-p{
+dd{
     justify-content: center;
     align-items: center;
     font-family: 'emotion';
@@ -43,7 +43,7 @@ p{
     list-style: none; /* Le quita los puntos al listado */
     
 }
-.lanzamientosmesames li {
+.lanzamientosmesames dt {
 
     display: flex;
     flex-flow: row nowrap;
@@ -59,7 +59,7 @@ p{
     padding: .5rem;
     margin-top: 1rem;
 }
-.lanzamientosmesames p {
+/* .lanzamientosmesames p {
     display: flex;
     flex-flow: column nowrap;
     row-gap: .5rem;
@@ -69,4 +69,20 @@ p{
     align-content: center;
     text-align: justify;
     padding: .5rem;
+} */
+
+article p {
+    min-width: 80%;
+  max-width: 98%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 0.5em;
+  padding: 0.7em;
+  font-family: "emotion";
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }

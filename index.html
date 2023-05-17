@@ -11,6 +11,7 @@
   <!--Styles-->
   <link rel="stylesheet" href="./styles/main.css">
   <link rel="stylesheet" href="./styles/index.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -76,7 +77,7 @@
 
   <!-- Contenido Principal -->
   <main>
-    <h1> Home</h1>
+    <h1> Bienvenidos a Gaming Realm!</h1>
     <section class="bienvenidos-contenedor">
       <article class="bienvenidos-card">
         <h2>Bienvenidos a Gaming Realm!</h2>
@@ -86,56 +87,124 @@
           compartir esa pasión contigo. Esperamos que disfrutes de nuestro sitio web y que encuentres información
           valiosa
           para mejorar tu experiencia de juego. ¡Gracias por visitarnos y disfruta del mundo de los videojuegos!</p>
-        <button class="cerrar-btn">Cerrar</button>
+        <button class="cerrar-btn  hipervinculos">Ingresar a Gaming Realm
+          <span class="span1"></span>
+          <span class="span2"></span>
+          <span class="span3"></span>
+          <span class="span4"></span>
+        </button>
+
       </article>
     </section>
 
     <!--Carrousel-->
-    <article class="carrousel">
-      <section class="imagenes">
-        <!--Botón de imágenes-->
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
-        <input type="radio" name="radio-btn" id="radio4">
-        <!--Botón de imágenes-->
+    <section class="container-carrousel">
+      <article class="carrousel">
+        <section class="imagenes">
+          <!--Botón de imágenes-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--Botón de imágenes-->
 
-        <!--Imágenes del carrousel-->
-        <section class="primer imagen">
-          <img src="./assets/images/img_carrousel/img1.jpg" alt="">
-        </section>
-        <section class="imagen">
-          <img src="./assets/images/img_carrousel/img2.jpg" alt="">
-        </section>
-        <section class="imagen">
-          <img src="./assets/images/img_carrousel/img3.jpg" alt="">
-        </section>
-        <section class="imagen">
-          <img src="./assets/images/img_carrousel/img4.jpg" alt="">
-        </section>
-        <!--Imágenes del carrousel-->
+          <!--Imágenes del carrousel-->
+          <section class="primer imagen">
+            <img src="./assets/images/img_carrousel/descuentos especiales.jpg" alt="">
+          </section>
+          <section class="imagen">
+            <img src="./assets/images/img_carrousel/juegos gratis.jpg" alt="">
+          </section>
+          <section class="imagen">
+            <img src="./assets/images/img_carrousel/Gratis-PS.JPG" alt="">
+          </section>
+          <section class="imagen">
+            <img src="./assets/images/img_carrousel/seguinos.png" alt="">
+          </section>
+          <!--Imágenes del carrousel-->
 
-        <!--Navegación automática-->
-        <section class="navegacion-automatica">
-          <section class="auto-btn1"></section>
-          <section class="auto-btn2"></section>
-          <section class="auto-btn3"></section>
-          <section class="auto-btn4"></section>
+          <!--Navegación automática-->
+          <section class="navegacion-automatica">
+            <section class="auto-btn1"></section>
+            <section class="auto-btn2"></section>
+            <section class="auto-btn3"></section>
+            <section class="auto-btn4"></section>
+          </section>
+          <!--Navegación automática-->
         </section>
-        <!--Navegación automática-->
+
+        <!--Navegación manual-->
+        <section class="navegacion-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </section>
+        <!--Navegación manual-->
+      </article>
+      <section class="carrousel-sidebar">
+        <h3>JUEGO DEL MES </h3>
+        <img class="img-sidebar" src="./assets/images/star-wars-jedi-survivor-xbox.jpg" alt="">
       </section>
+    </section>
+      <!--Fin del carrousel-->
+      <h2 class="destacados-title">JUEGOS DESTACADOS</h1>
+      <section class="container">
+        <section class="evento">
+          <section class="foto" data-aos="fade-right">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fq53pdxY-0U" allowfullscreen></iframe>
+          </section>
+          <p class="fecha">Darkest Dungeon 2 es un videojuego de rol y aventura de acción, secuela del título de culto
+            de
+            Red Hook Studios. En esta segunda parte el sistema de combate del primer juego volverá, aunque se ha
+            mejorado
+            en cuanto a mecánicas y presentación. </p>
 
-      <!--Navegación manual-->
-      <section class="navegacion-manual">
-        <label for="radio1" class="manual-btn"></label>
-        <label for="radio2" class="manual-btn"></label>
-        <label for="radio3" class="manual-btn"></label>
-        <label for="radio4" class="manual-btn"></label>
+        </section>
+        <section class="evento">
+          <section class="foto" data-aos="fade-left">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DFze21M_O6s" allowfullscreen></iframe>
+          </section>
+          <p class="fecha">Far Cry 6 es un nuevo videojuego de la saga de acción en primera persona de Ubisoft. En el
+            título viajaremos a Yara, un paraíso tropical ficticio gobernado por un tirano: Anton Castillo, a quien pone
+            cara y voz Giancarlo Esposito.</p>
+        </section>
+        <section class="evento">
+          <section class="foto" data-aos="fade-right">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2SNF4M_v7wc" allowfullscreen></iframe>
+          </section>
+          <p class="fecha"> La secuela nos llevará de nuevo a un Hyrule extenso aunque mucho más oscuro y retorcido tras
+            la vuelta de un mal encarnado por Ganon</p>
+        </section>
+        <section class="evento">
+          <section class="foto" data-aos="fade-left">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rN_PBAK5YyM" allowfullscreen></iframe>
+          </section>
+          <p class="fecha">Street Fighter 6 es la nueva entrega de la veterana saga de lucha 2D de Capcom, que vuelve
+            rehecho con la tecnología de RE ENGINE de Capcom para dar una mayor espectacularidad. Sus modos de juegos se
+            reparten en World Tour, Fighting Ground y Battle Hub. </p>
+        </section>
+        <section class="evento">
+          <section class="foto" data-aos="fade-right">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ro26B394ZBM" allowfullscreen></iframe>
+          </section>
+          <p class="fecha">Diablo 4 es la cuarta entrega de la saga de acción y rol de Blizzard, toda una institución
+            del
+            mundo del videojuego. En esta ocasión volverá a sus raíces, presentándonos un mundo de terror gótico y de
+            fantasía oscura, devolviéndonos la lucha constante contra los demonios y las criaturas que se esconden en el
+            inframundo.</p>
+        </section>
+        <section class="evento">
+          <section class="foto" data-aos="fade-left">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZjGmX2kyrww" allowfullscreen></iframe>
+          </section>
+          <p class="fecha">The Lord of the Rings: Gollum, se tratará de un videojuego de acción y aventuras centrado en
+            el personaje de Gollum para Xbox One, Xbox Series S/X, PS4, PS5, Nintendo Switch y PC, narrándonos los
+            hechos
+            transcurridos justo después de que obtuviese el Anillo Único.</p>
+        </section>
       </section>
-      <!--Navegación manual-->
-    </article>
-    <!--Fin del carrousel-->
-
+      <a class="top-button" href="#">Volver arriba &#8634;</a>
   </main>
 
   <footer>
@@ -154,9 +223,7 @@
       </ul>
     </nav>
     <!--copyright-->
-    <section id="copyright">
-      <p>&copy; Copyright 2023 Codo a Codo - Comision 23038</p>
-    </section>
+    <p id="copyright">&copy; Copyright 2023 Codo a Codo - Comision 23038</p>
   </footer>
   <!-- Scripts -->
   <script src="./assets/scripts/index.js"></script>
