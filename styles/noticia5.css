@@ -4,7 +4,6 @@
     row-gap: 1rem;
     justify-content: center;
     align-items: center;
-
 }
 
 .honkaisr h2 {
@@ -27,7 +26,6 @@
     text-align: justify;
     color: white;
     padding: .5rem;
-
 }
 
 .honkaisr a {
@@ -55,3 +53,33 @@
     margin-right: auto;
     width: 40%;
 }
+
+/*------------------------------ MEDIA QUERIES ---------------------------------------*/
+
+@media screen and (max-width: 767px) {
+    
+    .honkaisr h2 {
+        font-size: 2.3em;
+    }
+
+    .honkaisr img {        
+        width: 100%;
+        padding: 0.5em;
+    }
+
+    .honkaisr a {        
+        width: 90%;
+        font-size: 1.3em;
+    }    
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .honkaisr img {        
+        width: 100%;
+    }
+
+    .honkaisr a {
+        width: 60%;
+    }
+  }

@@ -1,8 +1,3 @@
-/*       
- main {   
-    background-color: rgba(0, 0, 0, 0.7);  
-} */
-
 h2{
     font-family: 'emotion';
     font-weight: bold;
@@ -13,8 +8,7 @@ h2{
     align-items: center;
     text-align: center; 
     text-decoration: underline;
-    margin-bottom: 2rem;
- 
+    margin-bottom: 2rem; 
 }
 
 dd{
@@ -27,24 +21,22 @@ dd{
     padding: .5rem;
 }
 
-/* ----------------------------------------------------------------*/
-#juegos { /* contenedor padre */
 
-    display: flex; /* crea contenedor */
-    flex-flow: column nowrap; /* atajo para que este en formato vertical y que no se desborde el contenido */
-    row-gap: 1rem ; /* espacio entre columnas */
+#juegos { /* contenedor padre */
+    display: flex; 
+    flex-flow: column nowrap; 
+    row-gap: 1rem ; 
     justify-content: center;
     align-items: center;       
 }
-.lanzamientosmesames { /* contenedor hijo */
 
+.lanzamientosmesames { /* contenedor hijo */
     display: flex;
     flex-flow: column nowrap;
-    list-style: none; /* Le quita los puntos al listado */
-    
+    list-style: none;     
 }
-.lanzamientosmesames dt {
 
+.lanzamientosmesames dt {
     display: flex;
     flex-flow: row nowrap;
     background-color: aqua;
@@ -59,17 +51,6 @@ dd{
     padding: .5rem;
     margin-top: 1rem;
 }
-/* .lanzamientosmesames p {
-    display: flex;
-    flex-flow: column nowrap;
-    row-gap: .5rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: white;
-    justify-content: center;
-    align-content: center;
-    text-align: justify;
-    padding: .5rem;
-} */
 
 article p {
     min-width: 80%;
@@ -86,3 +67,4 @@ article p {
   margin-right: auto;
   text-align: center;
 }
+

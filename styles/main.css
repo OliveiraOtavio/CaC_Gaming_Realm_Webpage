@@ -1,4 +1,3 @@
-/*Caracteristicas generales*/
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +5,6 @@
   /* border: 1px solid green; */
 }
 
-/*Estilos de Tipografia*/
 @font-face {
   font-family: snes;
   src: url("../assets/fonts/SnesItalic-1G9Be.ttf");
@@ -17,28 +15,26 @@
   src: url("../assets/fonts/EmotionEngine-8ynA.ttf");
 }
 
-/*Afecta todo el html*/
 html {
   height: 100vh;
   max-width: 100vw;
   background-color: rgb(32, 5, 82); 
   background-image: url('.././assets/images/fondo-html.jpg');
-  background-size: cover;  
-  background-repeat: repeat; 
+  background-size: cover;    
+  background-repeat:repeat; 
 }
 
-/*Caracteristicas q afectan a todo el contenido del body*/
 body {
   height: 100vh;  
   max-width: 95vw;  
   margin-left: auto;
   margin-right: auto;
 }
-/*Caracteristicas del header*/
+
 header {
   font-family: snes;
   border: 1px solid rgba(0, 0, 0, 1);
-  background: url(.././assets/images/4ea84f04d08d72d2cd574d14f5dad176.png);
+  background: url(.././assets/images/4ea84f04d08d72d2cd574d14f5dad176.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   margin-left: auto;
@@ -46,20 +42,6 @@ header {
   width: 100%;       
 }
 
-/*Caracteristicas del main*/
-main {
-  background-color: rgba(2, 4, 24,0.9);
-  padding: 3rem;  
-}
-
-/*Caracteristicas para todos el contenido de footer*/
-footer {
-  max-width: 100%;       
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/*Caracteristicas q afectan a todo h1*/
 h1 {
   font-family: "snes", sans-serif;
   background-color: rgba(0, 0, 0, 0.7);  
@@ -77,7 +59,6 @@ h1 {
   letter-spacing: 0.05em;
 }
 
-/*Caracteristicas unicamente para el h1 del main*/
 header h1 {
   letter-spacing: normal;
   font-family: "snes", sans-serif;
@@ -91,7 +72,46 @@ header h1 {
   margin-right: auto;
   width: 100%;  
 }
-/* Estilos para el título */
+
+/* Language Selectors */
+.uk-flag {  
+  width: 2em;
+  position: absolute;
+  display: flex;
+  margin-left: 91%;
+  margin-top: 1em;
+  border-radius: 10%;
+}
+
+.ar-flag {  
+  width: 2em;
+  position: absolute;
+  display: flex;
+  margin-left: 85%;
+  margin-top: 1em;
+  border-radius: 10%;
+}
+
+.br-flag {  
+  width: 2em;
+  position: absolute;
+  display: flex;
+  margin-left: 88%;
+  margin-top: 1em;
+  border-radius: 10%;
+}
+
+main {
+  background-color: rgba(2, 4, 24,0.9);
+  padding: 3rem;  
+}
+
+footer {
+  max-width: 100%;       
+  margin-left: auto;
+  margin-right: auto;
+}
+
 footer h3 {
   background-color: rgba(0, 0, 0,0.8);
   color: white;
@@ -101,7 +121,7 @@ footer h3 {
   padding-top: 1em;
   text-shadow: 2px 2px 1px  rgb(113, 5, 156);
 }
-/*Caracteristicas para todos los ul*/
+
 ul {
   display: flex;
   position: relative;
@@ -111,18 +131,15 @@ ul {
   margin: 0;
 }
 
-/*Caracteristicas para todos los LI que unicamente esten dentro de un UL*/
 ul li {
   list-style: none;
   margin-right: 1em;  
 }
+
 p{
   color: black;
   font-size: 25px;
 }
-
-
-
 
 /*------------------------------- Navbar Section -----------------------------------*/
 
@@ -140,10 +157,11 @@ p{
   position: sticky;
   top:0;
 }
+
 .sect {
-	width: 100%;
-  
+	width: 100%;  
 }
+
 .sect img{
 width: 100%;
 }
@@ -158,7 +176,6 @@ width: 100%;
   padding: 0.5em 1em;
 }
 
-/* CARACTERISTICAS DE LOS HIPERVINCULOS*/
 .hipervinculos {
   font-size: 0.7em;
   background-color: rgba(0, 0, 0, 0.4);
@@ -172,6 +189,7 @@ width: 100%;
   overflow: hidden;
   transition: 0.8s;
 }
+
 .hipervinculos span {
   position: absolute;
   display: block;
@@ -209,7 +227,7 @@ width: 100%;
   background: linear-gradient(360deg,transparent,#0ff);
 }
 
-/*EFECTOS VISUALES */
+/* Hyperlinks visual effects */
 .hipervinculos:hover {
   background-color: rgba(83, 147, 177, 0.7);
   color: white;
@@ -240,10 +258,9 @@ width: 100%;
   transition-delay: 0.25s;
 }  
 
-
 /*------------------------------- Social Media Section -----------------------------------*/
 
-/*contenedor de iconos*/
+/* icons container*/
 .social-container {
   background-color: rgba(0, 0, 0,0.8);
   height: 5em;
@@ -254,7 +271,7 @@ width: 100%;
   padding: 3em;
 }
   
-/* SEPARACION ENTRE ICONOS*/
+/* space between icons */
 .social-container li { 
   margin: 0 1em;
   width: 6em;
@@ -275,7 +292,7 @@ width: 100%;
   transition: .5s;
 }
 
-/*Carcateristicas de los iconos*/
+/* icons settings */
 .fa-brands{
   background-color: #333;
   color:white;
@@ -286,7 +303,6 @@ width: 100%;
   opacity: .2;
 }
 
-/*copy*/
 #copyright {
   font-family: emotion;  
   background-color: rgba(0, 0, 0);
@@ -296,8 +312,7 @@ width: 100%;
   font-size: 1.5em;
 }
 
-
-/* Efectos visuales*/
+/* Social media visual effects */
 .fa-brands:hover{
   color :white;
   opacity: 1;
@@ -363,15 +378,108 @@ width: 100%;
     padding-bottom: 1em;
   }
   
-  header h1 {
-    /* color: green; */
+  header h1 {    
     display: flex;
     align-items: center;
     height: 1.5em;
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
+    margin-top: 0;
+    padding-top: 1.4em;
+    padding-bottom: 0.8em;
+    margin-bottom: 0;
     font-size: 5em;
     text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .navbar {
+    background-color: rgba(13, 3, 33, 0.8);
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.7em;    
+  }
+
+  .navbar a {
+    font-family: snes;
+    font-size: 2em;
+    flex-direction: column;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+    border-radius: 0.3em;
+    padding: 0.5em 1em;    
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(84, 0, 82);    
+    margin-left: 85%;    
+    border: 1px solid rgb(162, 15, 147);
+    border-radius: 10%;
+    cursor: pointer;    
+  }
+
+  .bar {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: #bababa; 
+    margin: 4px 0;    
+    
+  }
+
+  /* Collapsable Menu settings */
+  .navbar ul {
+    display: none;   
+  }
+
+  .navbar ul.active {
+    display: block;    
+  }
+
+  .uk-flag {    
+    width: 2em;
+    position: absolute;
+    display: flex;
+    margin-left: 85%;
+    margin-top: 1em;
+    border-radius: 10%;
+  }
+  
+  .ar-flag {    
+    width: 2em;
+    position: absolute;
+    display: flex;
+    margin-left: 65%;
+    margin-top: 1em;
+    border-radius: 10%;
+  }
+  
+  .br-flag {    
+    width: 2em;
+    position: absolute;
+    display: flex;
+    margin-left:75%;
+    margin-top: 1em;
+    border-radius: 10%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  header h1 {
+    padding-top: 0.5em;
   }
 
   .navbar {
@@ -407,7 +515,7 @@ width: 100%;
   .menu-toggle {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Alinea el botón a la derecha */
+    justify-content: center; 
     align-items: center;
     width: 40px;
     height: 40px;
@@ -423,16 +531,43 @@ width: 100%;
     display: block;
     width: 24px;
     height: 2px;
-    background-color: #000; /* Cambia el color de las barras a negro */
+    background-color: #000; 
     margin: 4px 0;
   }
 
-  /* MENU HAMBURGUESA */
+  /* Collapsable menu settings */
   .navbar ul {
-    display: none; /* Oculta la lista de elementos del menú */
+    display: none; 
   }
 
   .navbar ul.active {
-    display: block; /* Muestra la lista de elementos del menú */
+    display: block; 
+  }
+
+  .uk-flag {   
+    width: 2em;
+    position: absolute;
+    display: flex;
+    margin-left: 90%;
+    margin-top: 1em;
+    border-radius: 10%;
+  }
+  
+  .ar-flag {    
+    width: 2em;
+    position: absolute;
+    display: flex;
+    margin-left: 80%;
+    margin-top: 1em;
+    border-radius: 10%;
+  }
+  
+  .br-flag {    
+    width: 2em;
+    position: absolute;
+    display: flex;
+    margin-left:85%;
+    margin-top: 1em;
+    border-radius: 10%;
   }
 }

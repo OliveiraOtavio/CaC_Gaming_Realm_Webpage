@@ -1,4 +1,5 @@
 const form = document.getElementById('contact-form');
+const messageContainer = document.getElementById('message-container');
 
 form.addEventListener('submit', function(event) {
   event.preventDefault();
@@ -8,7 +9,7 @@ form.addEventListener('submit', function(event) {
   }
 
   form.submit();
-  alert('El mensaje fue enviado con exito!');  
+  showMessage('El mensaje fue enviado con éxito!', 'success');
 });
 
 function isValidForm() {
@@ -16,7 +17,7 @@ function isValidForm() {
   const nameValue = nameInput.value.trim();
 
   if (nameValue === '') {
-    alert('Por favor, ingrese su nombre');
+    showMessage('Por favor, ingrese su nombre', 'error');
     nameInput.focus();
     return false;
   }
@@ -25,11 +26,11 @@ function isValidForm() {
   const emailValue = emailInput.value.trim();
 
   if (emailValue === '') {
-    alert('Por favor, ingrese su correo electrónico');
+    showMessage('Por favor, ingrese su correo electrónico', 'error');
     emailInput.focus();
     return false;
   } else if (!isValidEmail(emailValue)) {
-    alert('Por favor, ingrese un correo electrónico válido');
+    showMessage('Por favor, ingrese un correo electrónico válido', 'error');
     emailInput.focus();
     return false;
   }
@@ -38,11 +39,11 @@ function isValidForm() {
   const phoneValue = phoneInput.value.trim();
 
   if (phoneValue === '') {
-    alert('Por favor, ingrese su número de teléfono');
+    showMessage('Por favor, ingrese su número de teléfono', 'error');
     phoneInput.focus();
     return false;
   } else if (!isValidPhone(phoneValue)) {
-    alert('Por favor, ingrese un número de teléfono válido');
+    showMessage('Por favor, ingrese un número de teléfono válido', 'error');
     phoneInput.focus();
     return false;
   }
@@ -51,7 +52,7 @@ function isValidForm() {
   const messageValue = messageInput.value.trim();
 
   if (messageValue === '') {
-    alert('Por favor, ingrese su mensaje');
+    showMessage('*Por favor, ingrese su mensaje', 'error');
     messageInput.focus();
     return false;
   }
@@ -69,10 +70,15 @@ function isValidPhone(phone) {
   return phoneRegex.test(phone);
 }
 
+function showMessage(message, type) {
+  messageContainer.textContent = message;
+  messageContainer.className = type;
+}
+
 function handleSubmit() {
     if (isValidForm()) {
       alert('¡Gracias por enviar el mensaje!');
-      window.location.href = './index.html';
+      window.location.href = '#';
     }
   }
   

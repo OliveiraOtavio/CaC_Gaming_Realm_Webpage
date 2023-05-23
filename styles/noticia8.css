@@ -4,7 +4,6 @@
     row-gap: 1rem;
     justify-content: center;
     align-items: center;
-
 }
 
 .bahia h2 {
@@ -26,8 +25,7 @@
     font-family: 'emotion';
     text-align: justify;
     color: white;
-    padding: .5rem;
-    
+    padding: .5rem;    
 }
 
 .bahia a {
@@ -64,4 +62,25 @@
     font-size: medium;
     font-style: italic;
     color: white;
+}
+
+/*------------------------------ MEDIA QUERIES ---------------------------------------*/
+
+@media screen and (max-width: 767px) {
+    
+    .bahia h2 {
+        font-size: 2.3em;
+    }
+
+    .bahia img {        
+        width: 100%;
+        padding: 0.5em;
+    }  
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .bahia img {        
+        width: 100%;
+    }
 }

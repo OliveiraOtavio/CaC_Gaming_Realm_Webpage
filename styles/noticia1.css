@@ -7,8 +7,7 @@
   justify-content: center;
 }
 
-.magecontainer a { /* BOTON MAS INFORMACION*/
-  /* background-color: red; */
+.magecontainer a { /* BOTON MAS INFORMACION*/  
   font-family: 'emotion', sans-serif;
   width: 10em;
   font-size: 30px;
@@ -17,8 +16,7 @@
   justify-content: center;
   align-content: center;
   align-items: center;
-  color: lightskyblue;
-  /* padding: 2rem 40rem 2rem; */
+  color: lightskyblue;  
   text-decoration: underline;
   padding: 0.8rem;
   margin-left: auto;
@@ -29,8 +27,7 @@
   background-color: green;
   display: flex;
   align-items: center;
-  justify-content: center;
-  /* padding: 1rem 30rem; */
+  justify-content: center;  
   max-width: 97%;
   max-height: 100%; 
   margin-bottom: 2rem;
@@ -60,8 +57,7 @@
   margin-top: 1EM;
 }
 
-.magecontainer p { /* TEXTO PRINCIPAL DE LA NOTICIA */
-  background-color: rgba(0, 0, 0, 0.728);
+.magecontainer p { /* TEXTO PRINCIPAL DE LA NOTICIA */  
   font-family: 'emotion', Georgia;
   text-align: justify;
   color: rgb(255, 255, 255);
@@ -90,12 +86,12 @@
   list-style-type: none;    
 }
 
-.detallesmage li { /* TITULOS DE LA LISTA */  
+.detallesmage dt { /* TITULOS DE LA LISTA */  
   display: flex;
   flex-direction: row;
   font-family: 'emotion';
   font-style: italic;
-  font-size: 30px;
+  font-size: 2.5em;
   color: white;
   text-decoration: underline;  
   padding-bottom: 0.5em;
@@ -103,11 +99,12 @@
   margin-left: 1em;
 }
 
-.detallesmage p {
+.detallesmage dd {
   display: flex;
   flex-direction: row;
   font-family: 'emotion';
   text-align: justify;
+  font-size: 1.5em;
   color: white;
   padding: 0.5rem 1rem 0.5rem;
 }
@@ -135,3 +132,32 @@
   border-image: linear-gradient(to right, cyan, deeppink) 1;
   background: linear-gradient(cyan, deeppink)
 } 
+
+/*------------------------------ MEDIA QUERIES ---------------------------------------*/
+
+@media screen and (max-width: 767px) {
+
+  .detallesmage dd {
+    width: 90%;
+    font-size: 1.2em;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;   
+  }
+
+  .detallesmage dt {   
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .magecontainer p {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .magecontainer iframe {
+    width: 90%;
+  }
+}
+

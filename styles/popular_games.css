@@ -13,6 +13,7 @@
   font-size: 5em;
   font-family: emotion;
 }
+
 .popular-games-info {
   min-width: 80%;
   max-width: 98%;
@@ -30,16 +31,14 @@
 }
 
 /*----------------------------- Cards Configuration----------------------------------------*/
-.card-container {
-  /*background-color: brown;*/
+.card-container {  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   max-width: 100%;
 }
 
-.card {
-  /* background-color: blueviolet; */
+.card {  
   filter: grayscale(100%);
   background-color: rgb(93, 93, 93);
   display: flex;
@@ -153,14 +152,11 @@
   .card-container {
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    /* padding: 0; 
-    margin: 0; */
+    width: 100%;    
   }
 
   .card {
-    width: 100%;
-    /* margin: 0.1em 0; */
+    width: 100%;    
     filter: none;
     background-color: white;
   }
@@ -179,8 +175,7 @@
 @media (min-width: 768px) and (max-width: 1023px) {
 
   .card {
-      width: 45%;     
-      
+      width: 43%;        
     }
 }
 

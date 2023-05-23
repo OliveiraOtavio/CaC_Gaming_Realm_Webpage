@@ -1,161 +1,156 @@
-
-  .developers-info {  
-    min-width: 80%;
-    max-width: 98%;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.45);
-    border-radius: 0.5em;
-    padding: 0.7em;
-    font-family: "emotion";
-    font-size: 1.5em;
-    margin-top: 0;
-    margin-bottom: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: justify;
-}  
-
-/*Contenedor del main*/
-.container{
-    max-width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 0em; /* ajusta la distancia entre las tarjetas */
-    margin: 0 -13px; /* margen negativo para compensar el padding del body */
-    margin-bottom: 1em;
-   
+main {
+  min-height: 75em;
 }
 
-/*Carta de presentacion*/
-.container .card{
-    width: 22%; /* ancho de la tarjeta con margen incluido */
-    margin-left: 2%;    
-    display: flex;
-    flex-direction: column;    
-    justify-content: center;
+.top-button {
+  margin-top: 6em;
 }
 
-/*Contenedor de la foto de la carta */
-.container .card .face.face1{
-    min-height: 30em;
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-    filter: grayscale(100%); 
-    background: #282828;      
-    align-content:center;
-    align-items: center;
-    z-index: 1;
-    transform: translateY(2em);
-    margin-bottom: -10em;    
-    
+.developers-info {
+  min-width: 80%;
+  max-width: 98%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 0.5em;
+  padding: 0.7em;
+  font-family: "emotion";
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
 }
 
-/*Texto del contenedor de la foto*/
-.container .card .face.face1 .content{
-    opacity: .2;
-    transition:  0.5s;
-    text-align: center;  
-} 
-
-.container .card .face.face1 .content i{
-    font-size: 3em;
-    color: white;
-    display: inline-block;  
+/* Main container */
+.container {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -13px; /* margen negativo para compensar el padding del body */
+  margin-bottom: 1em;
 }
 
-.container .card .face.face1 .content h3{ 
-    font-family: emotion;
-    font-size: 1.75em;
-    color: white;
-    text-align: center;  
-    cursor: default;
+/* Presentation Cards */
+.container .card {
+  width: 22%; /* ancho de la tarjeta con margen incluido */
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/*Contenedor del datos de todas las  carta*/
-.container .card .face.face2{
-    flex: 1;
-    background: whitesmoke;     
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5em;    
-    padding-top: 1.5em;
-    box-sizing: border-box;
-    box-shadow: 0 1em 2.5em rgba(0,0,0,.8);
-    transition: 0.7s;
-    transform: translateY(-10em);
+/* Card Photos container */
+.container .card .face.face1 {
+  min-height: 30em;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  filter: grayscale(100%);
+  background: #282828;
+  align-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(2em);
+  margin-bottom: -10em;
 }
 
-
-.container .card .face.face2 .content p{
-    color:black;    
-    font-family: emotion;    
-    font-size: 1em;
-    cursor: default;
-    margin: 0 ;    
-    padding: 0;
-    padding-bottom: 0.3em;
+/* Photo container texts */
+.container .card .face.face1 .content {
+  opacity: 0.2;
+  transition: 0.5s;
+  text-align: center;
 }
 
-/*color del subtitulos*/
+.container .card .face.face1 .content i {
+  font-size: 3em;
+  color: white;
+  display: inline-block;
+}
+
+.container .card .face.face1 .content h3 {
+  font-family: emotion;
+  font-size: 1.75em;
+  color: white;
+  text-align: center;
+  cursor: default;
+}
+
+/* Data container in cards */
+.container .card .face.face2 {
+  flex: 1;
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+  padding-top: 1.5em;
+  box-sizing: border-box;
+  box-shadow: 0 1em 2.5em rgba(0, 0, 0, 0.8);
+  transition: 0.7s;
+  transform: translateY(-10em);
+}
+
+.container .card .face.face2 .content p {
+  color: black;
+  font-family: emotion;
+  font-size: 1em;
+  cursor: default;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0.3em;
+}
+
+/* Subtitle color settings*/
 .data-label {
-    color: rgb(59, 13, 56);    
+  color: rgb(59, 13, 56);
 }
 
-/*----------------EFECTOS SOBRE LAS CARTAS-----------------------*/
+/*----------------Card Effects-----------------------*/
 
-/*Efecto de luminosidad sobre el contenedor de la  foto*/
-.container .card:hover .face.face1{
-    transform: translateY(0);
-    filter: grayscale(0%);
-    background-color: rgb(18, 18, 18);
-    box-shadow:
-    inset 0 0 1.5em whitesmoke,
-    inset 0.3em 0 1em #f0f,
-    inset -0.3em 0 1em #0ff,
-    inset 0.3em 0 4.5em #f0f,
-    inset -0.3em 0 4.5em #0ff,
-    0 0 0.75em #fff,
-    -0.15em 0 1.2em #f0f,
-    0.15em 0 1.2em #0ff;
-    
+/* Container Light effects */
+.container .card:hover .face.face1 {
+  transform: translateY(0);
+  filter: grayscale(0%);
+  background-color: rgb(18, 18, 18);
+  box-shadow: inset 0 0 1.5em whitesmoke, inset 0.3em 0 1em #f0f,
+    inset -0.3em 0 1em #0ff, inset 0.3em 0 4.5em #f0f, inset -0.3em 0 4.5em #0ff,
+    0 0 0.75em #fff, -0.15em 0 1.2em #f0f, 0.15em 0 1.2em #0ff;
 }
-.container .card:hover .face.face1 .content{
-    opacity: 1;
+
+.container .card:hover .face.face1 .content {
+  opacity: 1;
 }
+
 .container .card .face.face1 .content img {
-width: 100%; /* ajusta la anchura de la imagen */
+  width: 100%; /* ajusta la anchura de la imagen */
 }
 
-.container .card:hover .face.face2{
-    transform: translateY(10em); 
+.container .card:hover .face.face2 {
+  transform: translateY(10em);
 }
 
 /*------------------------------ MEDIA QUERIES ---------------------------------------*/
 
-@media  (max-width: 767px) {
-
-    .container .card {
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: auto;
-        margin-bottom: 10em;
-      }
+@media (max-width: 767px) {
+  .container .card {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-bottom: 10em;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-
-    .container .card {
-        width: 45%;     
-        display: flex;       
-        justify-content: center;
-        align-items: center;
-        margin-left: auto;
-        margin-bottom: 8em;
-      }
+  .container .card {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-bottom: 8em;
+  }
 }
-

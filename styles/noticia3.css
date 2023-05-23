@@ -74,5 +74,39 @@
 }
 
 
+/*------------------------------ MEDIA QUERIES ---------------------------------------*/
+
+@media screen and (max-width: 767px) {
+    
+    .comic h2 {
+        font-size: 2.3em;
+    }
+
+    .comic img {        
+        width: 100%;
+        padding: 0.5em;
+    }
+
+    .comic a {        
+        width: 100%;
+        font-size: 1.3em;
+    }
+
+    .boton {
+        max-width: 90%;       
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .comic img {        
+        width: 100%;
+    }
+
+    .boton {
+        max-width: 100%;
+    }
+  }
+
 
 
