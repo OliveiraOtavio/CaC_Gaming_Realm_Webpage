@@ -34,7 +34,7 @@ main {
 
 /* Presentation Cards */
 .container .card {
-  width: 22%; /* ancho de la tarjeta con margen incluido */
+  width: 18%; /* ancho de la tarjeta con margen incluido */
   margin-left: 2%;
   display: flex;
   flex-direction: column;
